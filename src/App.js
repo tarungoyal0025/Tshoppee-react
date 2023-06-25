@@ -12,6 +12,7 @@ import {
 } from "react-router-dom";
 import Product from './components/Product';
 import OrderHistory from './components/Orderhistory';
+import Description from './components/Description';
 
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/product" element={<Product />} />
           <Route path="/orders" element={<OrderHistory />} />
+          <Route path="/description" element={<Description />} />
         </Routes>
         <Footer />
         <Copyright />
