@@ -18,11 +18,11 @@ function Footer() {
           <div className="col-md-4">
             <h5 className="mb-3 fs-3">Useful Link</h5>
             <ul className="list-unstyled">
-              <li><a href="#" className='link-light link-underline-dark'>FAQ</a></li>
-              <li><a href="#" className='link-light link-underline-dark'>Reviews</a></li>
-              <li><a href="#" className='link-light link-underline-dark'>Privacy Policy and Terms of Service</a></li>
-              <li><a href="#" className='link-light link-underline-dark'>Return and Refund Policy</a></li>
-              <li><a href="#" className='link-light link-underline-dark'>Payment Options</a></li>
+              <li><a href="/" className='link-light link-underline-dark'>FAQ</a></li>
+              <li><a href="/" className='link-light link-underline-dark'>Reviews</a></li>
+              <li><a href="/" className='link-light link-underline-dark'>Privacy Policy and Terms of Service</a></li>
+              <li><a href="/" className='link-light link-underline-dark'>Return and Refund Policy</a></li>
+              <li><a href="/" className='link-light link-underline-dark'>Payment Options</a></li>
             </ul>
           </div>
           <div className="col-md-4">
