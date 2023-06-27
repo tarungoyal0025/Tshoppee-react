@@ -13,21 +13,23 @@ import {
 import Product from './components/Product';
 import OrderHistory from './components/Orderhistory';
 import Description from './components/Description';
+import Register from './components/Register';
 
 
 function App() {
   return (
     <div>
       <Router>
-       <Navbar title="T Shoppee" />
+        <Navbar title="T Shoppee" />
         <Routes>
-        <Route path="/" element={<div className='bg-light'> <Product /> <Review /> <Contact /></div>} />
+          <Route path="/" element={<div className='bg-light'> <Product /> <Review /> <Contact /></div>} />
           <Route path="/about" element={<About />} />
           <Route path="/login" element={<Login />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/product" element={<Product />} />
           <Route path="/orders" element={<OrderHistory />} />
           <Route path="/description" element={<Description />} />
+          <Route path="/register" element={<Register />} />
         </Routes>
         <Footer />
         <Copyright />

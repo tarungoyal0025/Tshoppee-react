@@ -1,10 +1,14 @@
 import React from 'react';
-
+import { useNavigate } from 'react-router-dom';
 function Login() {
+  const navigate = useNavigate();
   const handleSubmit = (event) => {
     event.preventDefault();
     alert("Successfully Login");
   };
+  function handleclick(){
+    navigate("/Register");
+  }
 
   return (
     <div className="container mt-5 mb-5">
@@ -30,7 +34,14 @@ function Login() {
                     id="password"
                   />
                 </div>
+                <div className='row'>
+                <div className='col-md-2'>
                 <button type="submit" className="btn btn-dark mt-3">Login</button>
+                </div>
+                <div className='col-md-2 mt-4'>
+            <a href='/Register' onClick={handleclick}>Register</a>
+                </div>
+                </div>
               </form>
             </div>
           </div>

@@ -31,9 +31,13 @@
 
 
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 export default function ProductItems(props) {
+  const navigate = useNavigate();
+  function handleClick(){
+    navigate("/description");
+  }
   return (
     <div>
       <div className='my-3'>
@@ -47,7 +51,7 @@ export default function ProductItems(props) {
               price: props.price
             }
           }}>
-            <img src={props.imageUrl} className="card-img-top" alt="..." />
+            <img src={props.imageUrl} className="card-img-top" alt="..."  onClick={handleClick}/>
           </Link>
           <div className="card-body">
             <h5 className="card-title">{props.title}</h5>
