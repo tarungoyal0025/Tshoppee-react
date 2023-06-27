@@ -51,7 +51,7 @@ export default function Contact() {
 
                                         <div class="form-outline form-white mb-3">
                                             <label class="form-label" htmlFor="typePasswordX">Email</label>
-                                            <input type="password" class="form-control form-control-lg"
+                                            <input type="email" class="form-control form-control-lg"
                                                 id="email" value={email} onChange={(e) => setEmail(e.target.value)}
                                                 required
                                             />
